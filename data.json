@@ -1,0 +1,266 @@
+{
+  "users": [
+    {
+      "id": "DOC001",
+      "email": "dr.smith@goodphysio.com",
+      "password": "doctor123",
+      "name": "Dr. Sarah Smith",
+      "role": "doctor",
+      "specialization": "Sports Rehabilitation",
+      "license": "PT-2020-45678",
+      "created": "2025-01-15"
+    },
+    {
+      "id": "DOC002",
+      "email": "dr.jones@goodphysio.com",
+      "password": "doctor456",
+      "name": "Dr. Michael Jones",
+      "role": "doctor",
+      "specialization": "Neurological Physiotherapy",
+      "license": "PT-2019-32145",
+      "created": "2025-02-01"
+    },
+    {
+      "id": "PAT001",
+      "email": "maria@email.com",
+      "password": "patient123",
+      "role": "patient",
+      "surname": "Garcia",
+      "firstname": "Maria",
+      "middlename": "Santos",
+      "age": "34",
+      "birthdate": "1992-03-15",
+      "address": "123 Rizal St., San Pedro, Laguna",
+      "phone": "+63 912 345 6789",
+      "sex": "Female",
+      "occupation": "Teacher",
+      "emergencyContact": {
+        "name": "Juan Garcia",
+        "phone": "+63 917 111 2222",
+        "relationship": "Spouse"
+      },
+      "medicalHistory": [
+        {
+          "id": "HIST001",
+          "date": "2024-11-20",
+          "doctorId": "DOC001",
+          "doctorName": "Dr. Sarah Smith",
+          "diagnosis": "Post-operative knee rehabilitation",
+          "treatment": "Manual therapy, strengthening exercises, gait training",
+          "comments": "Patient underwent ACL reconstruction surgery 4 weeks ago. Shows good progress with range of motion exercises. Recommended 3x per week sessions for 8 weeks.",
+          "followUp": "2024-12-04"
+        },
+        {
+          "id": "HIST002",
+          "date": "2025-01-15",
+          "doctorId": "DOC001",
+          "doctorName": "Dr. Sarah Smith",
+          "diagnosis": "Continued knee rehabilitation - Phase 2",
+          "treatment": "Advanced strengthening, balance training, sport-specific drills",
+          "comments": "Patient has regained full range of motion. Now focusing on strength and stability. Can start light jogging in 2 weeks.",
+          "followUp": "2025-02-15"
+        }
+      ],
+      "created": "2025-03-10"
+    },
+    {
+      "id": "PAT002",
+      "email": "david@email.com",
+      "password": "patient456",
+      "role": "patient",
+      "surname": "Kim",
+      "firstname": "David",
+      "middlename": "Koral",
+      "age": "28",
+      "birthdate": "1998-07-22",
+      "address": "45 Mabini St., Binan, Laguna",
+      "phone": "+63 917 890 1234",
+      "sex": "Male",
+      "occupation": "Software Engineer",
+      "emergencyContact": {
+        "name": "Sofia Kim",
+        "phone": "+63 918 333 4444",
+        "relationship": "Sister"
+      },
+      "medicalHistory": [
+        {
+          "id": "HIST003",
+          "date": "2025-04-10",
+          "doctorId": "DOC001",
+          "doctorName": "Dr. Sarah Smith",
+          "diagnosis": "Running-related hamstring strain",
+          "treatment": "Soft tissue mobilization, stretching protocol, progressive loading exercises",
+          "comments": "Patient training for marathon. Grade 2 hamstring strain. Advised to rest from running for 3 weeks and follow rehabilitation protocol.",
+          "followUp": "2025-04-24"
+        }
+      ],
+      "created": "2025-04-22"
+    },
+    {
+      "id": "PAT003",
+      "email": "",
+      "password": "",
+      "role": "patient",
+      "surname": "Dela Cruz",
+      "firstname": "Juan",
+      "middlename": "Reyes",
+      "age": "45",
+      "birthdate": "1981-01-08",
+      "address": "78 Aurora Blvd., San Pablo, Laguna",
+      "phone": "+63 919 555 6666",
+      "sex": "Male",
+      "occupation": "Construction Worker",
+      "emergencyContact": {
+        "name": "Maria Dela Cruz",
+        "phone": "+63 919 777 8888",
+        "relationship": "Spouse"
+      },
+      "medicalHistory": [
+        {
+          "id": "HIST004",
+          "date": "2026-04-28",
+          "doctorId": "DOC001",
+          "doctorName": "Dr. Sarah Smith",
+          "diagnosis": "Chronic lower back pain",
+          "treatment": "Manual manipulation, core strengthening, ergonomic assessment",
+          "comments": "Patient reports lower back pain for 6 months. Work-related due to heavy lifting. Recommended weekly sessions and workplace modifications.",
+          "followUp": "2026-05-12"
+        }
+      ],
+      "created": "2026-04-28"
+    },
+    {
+      "id": "PAT004",
+      "email": "john@gmail.com",
+      "password": "Johnadrien1702",
+      "role": "patient",
+      "surname": "Cabaddu",
+      "firstname": "John Adrien",
+      "middlename": "Dolorito",
+      "age": "23",
+      "birthdate": "2002-10-07",
+      "address": "Tandang Sora, Quezon City",
+      "phone": "09267569193",
+      "sex": "Male",
+      "occupation": "N/A",
+      "emergencyContact": {
+        "name": "Jul",
+        "phone": "09999999999",
+        "relationship": "Partner"
+      },
+      "medicalHistory": [],
+      "created": "2026-05-02",
+      "name": "John Adrien Dolorito Cabaddu"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "APT001",
+      "patientId": "PAT001",
+      "patientName": "Maria Garcia",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Sarah Smith",
+      "date": "2026-05-10",
+      "time": "10:00",
+      "service": "Post-Surgical Rehabilitation",
+      "status": "confirmed",
+      "notes": "Follow-up on knee surgery recovery",
+      "created": "2026-05-02"
+    },
+    {
+      "id": "APT002",
+      "patientId": "PAT002",
+      "patientName": "David Kim",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Sarah Smith",
+      "date": "2026-05-10",
+      "time": "14:00",
+      "service": "Strengthening & Conditioning",
+      "status": "confirmed",
+      "notes": "",
+      "created": "2026-05-01"
+    },
+    {
+      "id": "APT003",
+      "patientId": "PAT003",
+      "patientName": "Juan Dela Cruz",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Sarah Smith",
+      "date": "2026-05-12",
+      "time": "09:00",
+      "service": "Pain Management",
+      "status": "confirmed",
+      "notes": "Regular session for back pain",
+      "created": "2026-04-28"
+    }
+  ],
+  "posts": [
+    {
+      "id": "POST002",
+      "doctorId": "DOC002",
+      "doctorName": "Dr. Michael Jones",
+      "title": "May Promotion: Free Consultation",
+      "content": "For the whole month of May, we're offering free initial consultations for stroke recovery patients. Book your slot now!",
+      "type": "promo",
+      "date": "2026-05-02",
+      "time": "11:00"
+    },
+    {
+      "id": "POST001",
+      "doctorId": "DOC001",
+      "doctorName": "Dr. Sarah Smith",
+      "title": "New Equipment Arrived!",
+      "content": "We're excited to announce the arrival of our new ultrasound therapy machine. This will greatly enhance our treatment options for soft tissue injuries.",
+      "type": "update",
+      "date": "2026-05-01",
+      "time": "09:30"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "RATE001",
+      "patientId": "PAT001",
+      "patientName": "Maria Garcia",
+      "rating": 5,
+      "review": "After my knee surgery I was afraid to walk. The team gave me confidence and now I hike again! Truly life-changing care.",
+      "date": "2026-04-15",
+      "verified": true
+    },
+    {
+      "id": "RATE002",
+      "patientId": "PAT002",
+      "patientName": "David Kim",
+      "rating": 5,
+      "review": "Marathon training injury fixed in weeks. Professional, clean clinic, and effective exercises. Back to running stronger than ever.",
+      "date": "2026-04-20",
+      "verified": true
+    },
+    {
+      "id": "RATE003",
+      "patientId": "PAT003",
+      "patientName": "Juan Dela Cruz",
+      "rating": 4,
+      "review": "Lower back pain significantly improved after just 6 sessions. They truly listen and adapt treatment. Highly recommended.",
+      "date": "2026-05-01",
+      "verified": true
+    },
+    {
+      "id": "RATE004",
+      "patientId": "PAT001",
+      "rating": 5,
+      "review": "yesy",
+      "date": "2026-05-02",
+      "verified": true
+    }
+  ],
+  "availableSlots": [
+    "09:00",
+    "10:00",
+    "11:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00"
+  ]
+}
